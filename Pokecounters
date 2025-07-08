@@ -1,0 +1,116 @@
+#include <iostream>
+#include <cstdlib>
+#include <ctime>
+using namespace std;
+
+void thunderboltground(){
+    cout<<endl;
+    cout<<endl;
+    cout<<"Pikachu used Thunderbolt! It was not very effective.";
+}
+
+void irontailground(){
+    cout<<endl;
+    cout<<endl;   
+    cout<<"Pikachu used Iron Tail!";
+}
+
+void quickattackground(){
+    cout<<endl;
+    cout<<endl;
+    cout<<"Pikachu used Quick Attack!";
+}
+
+void tackleground(){
+    cout<<endl;
+    cout<<endl;
+    cout<<"Pikachu used Tackle!";
+}
+
+void thunderboltwater(){
+    cout<<endl;
+    cout<<endl;
+    cout<<"Pikachu used Thunderbolt! The Psyduck fainted!";
+}
+
+void irontailwater(){
+    cout<<endl;
+    cout<<endl;
+    cout<<"Pikachu used Iron Tail!";
+}
+
+void quickattackwater(){
+    cout<<endl;
+    cout<<endl;
+    cout<<"Pikachu used Quick Attack!";
+}
+
+void tacklewater(){
+    cout<<endl;
+    cout<<endl;
+    cout<<"Pikachu used Tackle!";
+}
+
+void diglett(){
+    char answer;
+    cout<<"A wild Diglett has appeared!";
+    cout<<endl;
+	cout<<"Which move will Pikachu use?";
+	cout<<endl;
+	cout<<"a.) Thunderbolt";
+	cout<<endl;
+	cout<<"b.) Iron Tail";
+	cout<<endl;
+	cout<<"c.) Quick Attack";
+	cout<<endl;
+	cout<<"d.) Tackle";
+	cin>>answer;
+	if (answer == 'a'){
+	thunderboltground();
+	}
+	else if (answer == 'b'){
+	irontailground();
+	}
+	else if (answer == 'c'){
+	quickattackground();
+	}
+	else if (answer == 'd'){
+	tackleground();
+	}
+}
+
+void psyduck(){
+    char answer;
+    cout<<"A wild Psyduck has appeared!";
+    cout<<endl;
+	cout<<"Which move will Pikachu use?";
+	cout<<endl;
+	cout<<"a.) Thunderbolt";
+	cout<<endl;
+	cout<<"b.) Iron Tail";
+	cout<<endl;
+	cout<<"c.) Quick Attack";
+	cout<<endl;
+	cout<<"d.) Tackle";
+	cin>>answer;
+	if (answer == 'a'){
+	thunderboltwater();
+	}
+	else if (answer == 'b'){
+	irontailwater();
+	}
+	else if (answer == 'c'){
+	quickattackwater();
+	}
+	else if (answer == 'd'){
+	tacklewater();
+	}
+}
+
+int main(){
+    srand(time(0));
+    int chance = rand()%100;
+    if (chance < 75){
+        diglett();}
+    else{psyduck();}
+    }
