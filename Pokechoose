@@ -1,0 +1,60 @@
+#include <iostream>
+using namespace std;
+
+void healed(){
+    cout << endl;
+    cout << "Pikachu's attack made the opponent stronger!";
+}
+
+void nothing(){
+    cout << endl;
+    cout << "Pikachu's attack had no effect on the enemy...";
+}
+
+void alright(){
+    cout << endl;
+    cout << "Pikachu's attack was effective!";
+}
+
+void good(){
+    cout << endl;
+    cout << "Pikachu's attack was very effective!";
+}
+
+void great(){
+    cout << endl;
+    cout << "Pikachu's attack did critical damage!";
+}
+
+void exponential(){
+    cout << endl;
+    cout << "Pikachu is a fucking HACKER and should be HACKED to fucking PIECES!";
+}
+
+int main(){
+    float hitpoints;
+    cout << "Pikachu did ";
+    cin >> hitpoints;
+    cout << hitpoints << " damage!";
+
+    if (hitpoints < 0) {
+        healed();
+    }
+    else if (hitpoints == 0) {
+        nothing();
+    }
+    else if (hitpoints > 0 && hitpoints < 30) {
+        alright();
+    }
+    else if (hitpoints >= 30 && hitpoints < 60) {
+        good();
+    }
+    else if (hitpoints >= 60 && hitpoints < 100) {
+        great();
+    }
+    else if (hitpoints >= 100) {
+        exponential();
+    }
+
+    return 0;
+}
