@@ -1,0 +1,55 @@
+#include <iostream>
+using namespace std;
+
+
+void weak(){
+    cout<<endl;
+    cout<<endl;
+	cout<<"25 damage. The attack was unaffective...";
+	}
+
+void alright(){
+    cout<<endl;
+    cout<<endl;
+	cout<<"50 damage. The attack was effective!";
+	}
+
+void good (){
+    cout<<endl;
+    cout<<endl;
+	cout<<"75 damage. The attack was very effective!";
+	}
+
+void powerful(){
+    cout<<endl;
+    cout<<endl;
+	cout<<"250 damage! The attack was critical!";
+	}
+
+
+int main(){
+	char answer;
+	cout<<"Pikachu has encountered a wild Gengar! Which move will she use?";
+	cout<<endl;
+	cout<<"a.) Thunderbolt";
+	cout<<endl;
+	cout<<"b.) Iron Tail";
+	cout<<endl;
+	cout<<"c.) Quick Attack";
+	cout<<endl;
+	cout<<"d.) Tackle";
+	cin>>answer;
+	if (answer == 'a'){
+	powerful();
+	}
+	else if (answer == 'b'){
+	good();
+	}
+	else if (answer == 'c'){
+	alright();
+	}
+	else if (answer == 'd'){
+	weak();
+	}
+	return 0;
+}
