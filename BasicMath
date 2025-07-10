@@ -1,0 +1,44 @@
+int main (){
+
+    //Introduction.
+    cout << "Hello! Welcome to my Basic Math C++ program.";
+    cout << endl;
+    cout << endl;
+    cout << endl;
+    cout << endl;
+    cout << "Why don't we get started?";
+    cout << endl;
+    cout << "Let's add an integer with another integer. In this case, 20 with 6.";
+    cout << endl;
+    cout << endl;
+
+    //Integers Added with Integers.
+    int a = 20;
+    int b = 6;
+    int sum = a + b;
+    cout << "Adding integers with integers: " << a << " + " << b << " = " << sum << endl << endl << endl << endl << endl;
+
+    //Integers Subtracted with Integers.
+    cout << "Next up, why don't we subtract those integers instead?" << endl << endl;
+    int diff = a - b;
+    cout << "Subtracting integers with integers: " << a << " - " << b << " = " << diff << endl << endl << endl << endl << endl;
+
+    //Floats Multiplied with Integers.
+    cout << "Now, let's multiply floats and integers together. The float being 19.99." << endl << endl;
+    float c = 19.99;
+    float mult = c * b;
+    cout << "Multiplying floats with integers: " << c << " x " << b << " = " << mult << endl << endl << endl << endl << endl;
+
+    //Floats Divided by Floats.
+    cout << "And for dividing floats with floats, let us divide 19.99 by the float of 5.5." << endl << endl;
+    float d = 5.5;
+    float div = c / d;
+    cout << "Dividing floats with floats: " << c << " / " << d << " = " << div << endl << endl << endl << endl << endl;
+
+    //Acquiring Remainders of Divided Integers.
+    cout << "Lastly, let us acquire the remainder of the division of integers 20 and 6." << endl << endl;
+    int rem = a % b;
+    cout << "Acquiring remainders of divided integers: " << a << " % " << b << " = " << rem << endl << endl << endl << endl << endl;
+    cout << "Very good work, User! Now, we have delved into the Basic Math operations through C++! See you around come cmath section!";
+    return 0;
+    }
