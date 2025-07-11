@@ -1,5 +1,5 @@
 #include <iostream>
-#include <iostream>
+#include <string>
 using namespace std;
 
 int main(){
@@ -33,7 +33,7 @@ int main(){
     };
 
     int score = 0;
-    cout<<"2D ANIMATION True or False Revier\n";
+    cout<<"2D ANIMATION True or False Reviewer\n";
     cout<<"Answer with True or False (ALL CAPS)\n\n";
 
     for (int i = 0; i < 11; i++) {
