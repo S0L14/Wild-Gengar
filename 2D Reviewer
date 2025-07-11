@@ -1,0 +1,57 @@
+#include <iostream>
+#include <iostream>
+using namespace std;
+
+int main(){
+    string answers[11];
+    bool correct[11] = {
+        false,
+        false,
+        true,
+        false,
+        true,
+        false,
+        false,
+        true,
+        true,
+        false,
+        true
+    };
+
+    string questions [11] = {
+        "1.) \"UI\" stands for User Integration: a way to integrate users into program immersion.",
+        "2.) Unity is the first game engine to not support 2D game programming.",
+        "3.) Adobe Illustrator is a Vector-Based Tool.",
+        "4.) Thumbnailing refers to creating video-posters on YouTube.",
+        "5.) Tween frames can ignore anatomy.",
+        "6.) A local value refers to the closest hue to white.",
+        "7.) Notan is a Japanese style composed of 3 values for foreground, midground, and background.",
+        "8.) If it is black & white, it is always monochromatic.",
+        "9.) Krita offers in-app animation tools.",
+        "10.) All thumbnails are black & white.",
+        "BONUS: Red Dead Redemption II should have won Game of the Year."
+    };
+
+    int score = 0;
+    cout<<"2D ANIMATION True or False Revier\n";
+    cout<<"Answer with True or False (ALL CAPS)\n\n";
+
+    for (int i = 0; i < 11; i++) {
+        cout << questions[i] << endl;
+        cout << "Your answer: ";
+        cin >> answers[i];
+
+        bool userAnswer = (answers[i] == "TRUE");
+
+        if (userAnswer == correct[i]) {
+            cout<<"Correct!\n\n";
+            score++;}
+            else {
+            cout<<"Incorrect.\n\n";
+            }
+        }
+        cout<<"You got "<<score<<" out of 11 correct."<<endl;
+
+        return 0;
+
+    }
