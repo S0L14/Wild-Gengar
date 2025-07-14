@@ -1,0 +1,61 @@
+#include <iostream>
+using namespace std;
+
+int main (){
+    // 1.4.1: Declaring and printing a character
+    char letter = 'A';
+
+    cout << "Part 1: Character stored: " << letter << endl << endl;
+    // HIT: for Part 2, insert here below the part 2 code lines.
+    // 1.4.2: Displaying the ASCII code of a character
+    cout << "Part 2:\n";
+    cout << "ASCII code of '" << letter << "' is: " << int(letter) << endl;
+
+    // Assigning a character using its ASCII value
+    letter = 66; // ASCII for 'B'
+    cout << "Character from ASCII code 66 is: " << letter << endl << endl;
+
+    // 1.4.3: Printing capital letters using ASCII values
+    cout << "Part 3:\nCapital letters (A-Z):\n";
+
+    // TAKE NOTE: Don't mind the loop at this moment, we are trying to display the results.
+    for (int i = 65; i <= 90; ++i){
+        cout << i << " = " << char (i) << endl;
+            }
+    
+    cout << endl;
+
+    // Part 4: ASCII vs EBCDIC
+    char questionmark = 63;
+    cout << "Will it be '?' or '63': " << questionmark << endl;
+
+    // 1.4.5 & 1.4.6: Using escape sequences.
+    cout << "Part 5: \nEscape characters demo:\n";
+
+    char singleQuote = '\'';
+    char backslash = '\\';
+    char newline = '\n';
+    char tab = '\t';
+    char bell = '\a'; //May produce a sound on some systems.
+
+    cout << "Single Quote: " << singleQuote << endl;
+    cout << "Backslash: " << backslash << endl;
+    cout << "Newline and tab: " << newline << tab << "Indented Text" << endl;
+    cout << "Bell sound (if supported): " << bell << endl;
+
+    // Octal and hx escapes for apostrophe (')
+    char octApostrophe = '\47'; // Octal 47 = ASCII 39
+    char hexApostrophe = '\x27'; // Hex 27 = ASCII 39
+    cout << "Octal apostrophe: " << octApostrophe << endl;
+    cout << "Hexadecimal apostrophe: " << hexApostrophe << endl << endl;
+
+    // 1.4.7: Arithmetic on char
+    cout << "Part 6:\nChar arithmetic demo\n";
+    char original = 'A';
+
+    cout << "Original: " << original << endl; original += 32; //Converts to lowercase ('a')
+    cout << "After +32: " << original << endl; original -= ' '; // Subtract ASCII value of space (32)
+    cout << "After subtracting space: " << original << endl;
+    
+    return 0;
+}
