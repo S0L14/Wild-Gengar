@@ -1,0 +1,28 @@
+#include <iostream>
+using namespace std;
+
+void oldie (){
+    cout<<endl;
+    cout<<"You're not my type.";
+    cout<<endl;
+}
+
+void youngin () {
+    cout<<endl;
+    cout<<"Zamn! She 12? Are you single?";
+    cout<<endl;
+}
+
+int main () {
+    cout<<"Welcome to my program!"<<endl<<"How old are you?"<<endl<<"Enter your age: ";
+    int age;
+    cin>>age;
+    if (age > 12){
+    oldie();
+    }
+    else {
+    youngin();
+    }
+return 0;
+
+}
