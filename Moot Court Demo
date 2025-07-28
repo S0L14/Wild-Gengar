@@ -1,0 +1,31 @@
+#include <iostream>
+#include <string>
+using namespace std;
+
+void startprogram() {
+    cout << endl << endl << "Okay, let's get started."<< endl << "Here is your first case:" << "In a shopping mall, a four year old child's shoelaces get stuck in the gaps of an elevator. Though there was a sign of warning in the elevator, the mother of the child had not seen it as she was texting on her smartphone. The child suffered a leg injury upon elevation. Is the store liable for negligence?";
+    cout << endl << "A.) YES: the store is completely liable as it was their responsibility to adheed to safety precautions.";
+    cout << endl << endl << " B.) NO: the store isn't liable as they had provided the cautionary sign and it was the mother's fault for the coinciding injury as she had been distracted with texting.";
+    cout << endl << endl << endl << "C.) IT DEPENDS: the store may have had visibility issues with the provided caution sign (rust, posters, font style, size, position), the"
+}
+
+void stallprogram() {
+    cout << endl << endl << "Take your time.";
+}
+
+int main() {
+    cout<<"Welcome to my Moot Court program VER 0";
+    for (int i = 0; i < 10; i++){
+        string startready;
+        cin >> startready;
+        cout << endl << "Are you ready? YES or NO?" << endl;
+        if (startready == "YES") {
+            startprogram();
+        }
+        if (startready == "NO") {
+            stallprogram();
+    }
+
+        return 0;
+    }
+}
